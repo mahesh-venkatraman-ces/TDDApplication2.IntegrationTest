@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using AutoFixture.Xunit2;
+using System.Linq.Expressions;
 
 namespace TDDApplication2.IntegrationTest.Services
 {
