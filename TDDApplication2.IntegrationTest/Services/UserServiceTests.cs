@@ -27,6 +27,17 @@ namespace TDDApplication2.IntegrationTest.Services
 
             //Assert
             Assert.Equal(1, result.Count);
-        }        
+        }
+
+        [Theory]
+        [AutoData]
+        public async Task GetUserAsync_WhenSuccess_ReturnsUserDTOList(int userid)
+        {
+            //Act
+            var result = await _userService.GetUserAsync(userid);
+
+            //Assert
+            Assert.NotNull(result);
+        }
     }
 }
